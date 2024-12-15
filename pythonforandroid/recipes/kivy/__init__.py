@@ -27,7 +27,7 @@ class KivyRecipe(CythonRecipe):
     name = 'kivy'
 
     depends = ['sdl2', 'pyjnius', 'setuptools']
-    python_depends = ['certifi', 'chardet', 'idna', 'requests', 'urllib3']
+    python_depends = ['certifi', 'chardet', 'idna', 'requests', 'urllib3', 'filetype']
 
     # sdl-gl-swapwindow-nogil.patch is needed to avoid a deadlock.
     # See: https://github.com/kivy/kivy/pull/8025
