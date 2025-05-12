@@ -32,7 +32,7 @@ class LibSDL2Image(BootstrapNDKRecipe):
                     line_split[-1].strip()
                 )
                 # Clone if needed
-                if not os.path.exists(clone_path) or os.listdir(clone_path) == 0:
+                if not os.path.exists(clone_path) or not os.listdir(clone_path):
                     shprint(
                         sh.git, "clone", url,
                         "--depth", "1", "-b",
