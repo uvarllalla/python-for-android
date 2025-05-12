@@ -38,7 +38,6 @@ class LibSDL2Image(BootstrapNDKRecipe):
                         "--depth", "1", "-b",
                         branch, clone_path, "--recursive"
                     )
-            file.close()
 
         super().prebuild_arch(arch)
 
