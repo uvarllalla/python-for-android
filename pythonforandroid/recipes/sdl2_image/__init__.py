@@ -25,7 +25,7 @@ class LibSDL2Image(BootstrapNDKRecipe):
         with open(os.path.join(build_dir, ".gitmodules"), "r") as file:
             for section in file.read().split('[submodule "')[1:]:
                 line_split = section.split(" = ")
-                # Parse .gitmoulde section
+                # Parse .gitmodule section
                 clone_path, url, branch = (
                     os.path.join(build_dir, line_split[1].split("\n")[0].strip()),
                     line_split[2].split("\n")[0].strip(),
