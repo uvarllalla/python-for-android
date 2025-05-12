@@ -9,6 +9,7 @@ class PyjniusRecipe(PyProjectRecipe):
     version = '1.6.1'
     url = 'https://github.com/kivy/pyjnius/archive/{version}.zip'
     name = 'pyjnius'
+    hostpython_prerequisites = ["Cython>=0.29.33,<3"]
     depends = [('genericndkbuild', 'sdl2', 'sdl3'), 'six']
     site_packages_name = 'jnius'
 
