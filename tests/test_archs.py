@@ -49,7 +49,7 @@ class ArchSetUpBaseClass(object):
 
     def setUp(self):
         self.ctx = Context()
-        self.ctx.ndk_api = 21
+        self.ctx.ndk_api = 24
         self.ctx.android_api = 27
         self.ctx._sdk_dir = "/opt/android/android-sdk"
         self.ctx._ndk_dir = "/opt/android/android-ndk"

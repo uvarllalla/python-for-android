@@ -137,7 +137,7 @@ MIN_TARGET_API = 30
 # should be a good default for other bootstraps too
 RECOMMENDED_TARGET_API = 33
 
-ARMEABI_MAX_TARGET_API = 21
+ARMEABI_MAX_TARGET_API = 24
 OLD_API_MESSAGE = (
     'Target APIs lower than 30 are no longer supported on Google Play, '
     'and are not recommended. Note that the Target API can be higher than '
@@ -162,8 +162,8 @@ def check_target_api(api, arch):
         warning(OLD_API_MESSAGE)
 
 
-MIN_NDK_API = 21
-RECOMMENDED_NDK_API = 21
+MIN_NDK_API = 24
+RECOMMENDED_NDK_API = 24
 OLD_NDK_API_MESSAGE = ('NDK API less than {} is not supported'.format(MIN_NDK_API))
 TARGET_NDK_API_GREATER_THAN_TARGET_API_MESSAGE = (
     'Target NDK API is {ndk_api}, '
